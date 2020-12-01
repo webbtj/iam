@@ -16,12 +16,14 @@
                 background-color: #101213;
                 font-family: 'Nunito', sans-serif;
                 font-weight: 200;
-                height: 100vh;
                 margin: 0;
-            }
 
-            .full-height {
-                height: 100vh;
+                background-blend-mode: luminosity;
+                background-attachment: fixed;
+                /* background-image: url(https://images.unsplash.com/photo-1606608665346-a535077fedd1?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=3334&q=80); */
+                background-image: url(https://source.unsplash.com/random/1920x1080);
+                background-position: center;
+                background-repeat: no-repeat;
             }
 
             .flex-center {
@@ -42,87 +44,114 @@
 
             .content {
                 text-align: center;
+                padding: 1em 3em;
+                background-color: rgba(0,0,0,0.8);
+                border-radius: 2em;
+                margin: 1em;
             }
 
             .title {
-                font-size: 84px;
+                font-size: 4em;
             }
 
             .sub-title {
-                font-size: 30px;
+                font-size: 2.3em;
                 letter-spacing: .2rem;
             }
 
             .links > a {
-                padding: 0 25px;
-                font-size: 15px;
+                display: block;
+                padding: 0.5em;
+                margin: 0.5em;
+                border: 2px solid;
+                border-radius: 2em;
+                font-size: 1.3em;
                 font-weight: 600;
                 text-decoration: none;
-                text-transform: lowercase;
-                margin-top: 60px;
-            }
-
-            .m-b-md {
-                margin-bottom: 30px;
+                text-transform: uppercase;
             }
 
             .code, .code:any-link {
-                color: #B5EAD7;
+                /* color: #B5EAD7; */
+                color: #30d498;
             }
             .music, .music:any-link {
-                color: #FF9AA2;
+                /* color: #FF9AA2; */
+                color: #d02532;
             }
             .human, .human:any-link {
-                color: #bae1ff;
+                /* color: #bae1ff; */
+                color: #008ffd;
             }
 
             footer {
-                font-size: 14px;
-                position: absolute;
-                bottom: 40px;
-                opacity: 0.3;
+                padding: 0.5em;
+                margin: 0.5em;
+                font-size: 0.9em;
+                opacity: 0.5;
+            }
+
+            .notice {
+                font-size: 0.8em;
+                color: #fff;
+                text-align: right;
+                margin: 0 0.5em 0.5em 0;
+            }
+
+            .notice a:any-link {
+                color: #fff;
             }
         </style>
     </head>
     <body>
-        <div class="flex-center position-ref full-height">
+        <div class="flex-center position-ref">
 
             <div class="content">
 
-                <div class="title m-b-md">
+                <div class="title">
                     TJ Webb
                 </div>
 
-                <div class="title sub-title m-b-md">
+                <div class="title sub-title">
                     <span class="code">code</span>
-                    <span class="human">&bull;</span>
-                    <span class="music">music</span>
-                    <span class="code">&bull;</span>
-                    <span class="human">human</span>
                 </div>
 
                 <div class="links">
                     <a class="code" title="TJ Webb's GitHub Profile" href="https://github.com/webbtj/">GitHub</a>
                     <a class="code" title="TJ Webb's Code Website" href="https://code.webb.tj">Code Site</a>
+                </div>
 
+                <div class="title sub-title">
+                    <span class="music">music</span>
+                </div>
+
+                <div class="links">
                     <a class="music" title="TJ Webb's Music on Bandcamp" href="https://tjwebb.bandcamp.com/">Bandcamp</a>
                     <a class="music" title="TJ Webb's Music on Spotify" href="https://open.spotify.com/artist/2vTwnB91s8C8IEfrnCm7tb">Spotify</a>
                     <a class="music" title="TJ Webb's Music on Apple Music" href="https://music.apple.com/ca/artist/tj-webb/1094437105">Apple Music</a>
                     <a class="music" title="TJ Webb's Music on YouTube Music" href="https://music.youtube.com/channel/UC_0JrJBjPf9IOmpNBAd8M_g">YouTube Music</a>
                     <a class="music" title="TJ Webb's Music Website" href="http://webb.tj">Music Site</a>
                     <a class="music" title="TJ Webb's Music on Facebook" href="https://www.facebook.com/TJWebbMusic">Facebook</a>
+                </div>
 
+                <div class="title sub-title">
+                    <span class="human">human</span>
+                </div>
+
+                <div class="links">
                     <a class="human" title="TJ Webb on Twitter" href="https://twitter.com/webbtj">Twitter</a>
                     <a class="human" title="TJ Webb on Instagram" href="https://www.instagram.com/webb.tj/">Instagram</a>
                     <a class="human" title="TJ Webb on LinkedIn" href="https://www.linkedin.com/in/webbtj">LinkedIn</a>
                     <a class="human" title="TJ Webb on Facebook" href="https://www.facebook.com/thetjwebb">Facebook</a>
-                    
                 </div>
-
+                <footer>
+                    webb dot tj at gmail dot com
+                </footer>
             </div>
-            <footer>
-                webb dot tj at gmail dot com
-            </footer>
+            
+        </div>
+        <div class="notice">
+            background image via <a href="https://unsplash.com/" target="_blank">unsplash</a>.
         </div>
     </body>
 </html>
